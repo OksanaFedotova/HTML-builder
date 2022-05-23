@@ -52,7 +52,6 @@ const bundleCSS = async() => {
   
 const bundleAssets = async (initialPath, bundlePath) => {
 
-  await fs.promises.rm(initialPath, { force: true, recursive: true});
   await fs.promises.mkdir(bundlePath);
 
   const nodes = await fs.promises.readdir(initialPath, {withFileTypes: true});
