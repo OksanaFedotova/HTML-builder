@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const constants = require('constants');
 
 const copy = async() => {
   const pathDir = path.join(__dirname, 'files-copy');

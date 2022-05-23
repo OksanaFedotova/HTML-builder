@@ -13,6 +13,7 @@ function exit() {
 }
 
 console.log('Привет! Введите текст');
+
 rl.on('line', (line) => { 
   if(line === 'exit') {
     exit();
